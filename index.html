@@ -1,46 +1,18 @@
 <html>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-}
+<script src="/js/medium-editor.js"></script>
+<link rel="stylesheet" href="/css/medium-editor.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="/css/themes/default.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/static/stylesheets/styles.css" />
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-li a.active {
-    color: white;
-    background-color: #4CAF50;
-}
-</style>
-
-<header>
+<head>
   <ul>
   <li><a class="active" href="/">Home</a></li>
   <li><a href="news.asp">News</a></li>
   <li><a href="contact.asp">Contact</a></li>
   <li><a href="about.asp">About</a></li>
 </ul>
-</header>
+</head>
 <hr>
-<body contenteditable="True">
-<p>edit me</p>
-</body>
+<div class="editable">heyy</div>
+<script>var editor = new MediumEditor('.editable');</script>
 </html>
